@@ -1,0 +1,62 @@
+.toggle {
+  border-radius: 36px;
+  cursor: pointer;
+  height: 36px;
+  width: 110px;
+  line-height: 36px;
+  margin: 10px auto;
+  position: relative;
+  text-align: left;
+  transition: background-color 0.4s ease;
+}
+
+.toggle span {
+  display: inline-block;
+  width: 33px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.toggle .indicator {
+  border-radius: 15px;
+  left: 50px;
+  top: 3px;
+  bottom: 3px;
+  width: 57px;
+  position: absolute;
+  transition: background-color 0.4s ease;
+}
+
+.toggle .indicator:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.4s ease;
+}
+
+.toggle.enabled {
+  background-color: #57d96f;
+}
+
+.toggle.disabled {
+  background-color: #dddddd;
+}
+
+.toggle.enabled .indicator {
+  background-color: #49b35c;
+}
+
+.toggle.disabled .indicator {
+  background-color: #bbbbbb;
+}
+
+.toggle.enabled .indicator:after {
+  left: 27px;
+}

@@ -1,0 +1,13 @@
+{
+  "hotels": [
+    { "id": 1, "name": "Palace", "city": "Madrid" },
+    { "id": 7, "name": "Melia", "city": "Barcelona" },
+    { "id": 12, "name": "Eurostars", "city": "Sevilla" },
+    { "id": 21, "name": "Holiday Inn", "city": "Lugo" }
+  ],
+  "chats": [
+    { "name": "Pepe", "date": "2021-05-10", "lastMessage": "Qué tal?", "unread": 3},
+    { "name": "Alicia", "date": "2021-05-09", "lastMessage": "Estás?"},
+    { "name": "Lucas", "date": "2021-05-08", "lastMessage": "Buenos días", "unread": 1}
+  ]
+}

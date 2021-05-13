@@ -1,0 +1,44 @@
+.todo-list {
+  background: repeating-linear-gradient(0deg, #faf699, #faf699 20px, #d3d4a0 20px, #d3d4a0 21px);
+  border: 1px solid #797a7a;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 21px;
+  margin: 20px auto;
+  height: 128px;
+  width: 300px;
+  padding: 0 8px 0 38px;
+  position: relative;
+}
+
+.todo-list:before {
+  content: '';
+  background-color: #c9af76;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 1px;
+}
+
+.todo-list .entries {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+.todo-list input {
+  background-color: transparent;
+  border: 0;
+  flex: 0 0 21px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.todo-list input:focus {
+  outline: 0
+}
